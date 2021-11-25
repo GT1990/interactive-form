@@ -1,8 +1,8 @@
 # Example
 
-![Example](/img/examples/form1.png)
-![Example](/img/examples/form2.png)
-![Example](/img/examples/form3.png)
+![Example](/img/examples/form_1.png)
+![Example](/img/examples/form_2.png)
+![Example](/img/examples/form_3.png)
 
 # Real-time Error Message
 
