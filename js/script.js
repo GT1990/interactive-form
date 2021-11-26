@@ -61,11 +61,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (design !== "Select Theme") {
       COLOR_SELECT.disabled = false;
       let color_options = COLOR_SELECT.options;
+      let first = true;
       for (let i = 1; i < color_options.length; i++) {
         if (color_options[i].getAttribute("data-theme") !== design) {
           color_options[i].style.display = "none";
         } else {
           color_options[i].style.display = "";
+          if (first) {
+            COLOR_SELECT.selectedIndex = i; // sets color to the design's first available color
+            first = false;
+          }
         }
       }
     }
@@ -300,10 +305,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /**
-   * Listens for blur event on the username and email inputs adding real-time error messages
+   * Listens for keyup event on the username and email inputs adding real-time error messages
    */
   for (let input of ALL_INPUTS) {
-    input.addEventListener("blur", (e) => {
+    input.addEventListener("keyup", (e) => {
       switch (input.getAttribute("name")) {
         case "user-name":
           isNameValid();

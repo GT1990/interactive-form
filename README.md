@@ -10,7 +10,7 @@ The Interactive Form was created to implement and display my knowledge of form v
 
 # Real-time Error Message
 
-Created an event listener to listen for the blur event on the Name and Email input feilds. The event listener then calls the validation helper function to see if the input was valid and displays a valid or invalid error message to the field.
+Created an event listener to listen for the keyup event on the Name and Email input feilds. The event listener then calls the validation helper function to see if the input was valid and displays a valid or invalid error message to the field.
 
 # Conditional Error Message
 
