@@ -1,6 +1,6 @@
 # Introduction
 
-The Interactive Form was created to implement and display my knowledge of form validation and form customization and interactivity guiding users through a form to avoid errors.
+The Interactive Form was created to implement and display my knowledge of form validation, form customization and interactivity guiding users through a form to avoid errors.
 
 # Example
 
